@@ -96,7 +96,7 @@ nav .logo img {
   height: 100vh; /* Full height of the viewport */
   text-align: center; /* Center-align the text */
   padding: 20px;
-  background-image: url('/images/projects.webp'); /* Replace with your image path */
+  background-image: url('../images/projects.webp'); /* Replace with your image path */
   background-size: cover; /* Ensure the image covers the entire section */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Avoid repeating the image */
