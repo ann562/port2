@@ -4,75 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="./css/projects.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav>
-      <div class="logo">
-          <a href="/">
-              <img src="/images/logo.png" alt="Logo">
-          </a>
-      </div>
-      <ul class="nav-links">
-          <li><a href="/">HOME</a></li>
-          <li><a href="/about">ABOUT ME</a></li>
-          <li><a href="/projects">PROJECTS</a></li>
-         
-      </ul>
-      <div class="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
-      </div>
-  </nav>
-   <!-- Projects Overview Section -->
-   <section class="projects-overview">
-      <h1>Projects Portfolio</h1>
-      <p>Welcome to my projects page! Here, I showcase a selection of my work, highlighting my skills, creativity, and technical expertise.</p>
-   </section>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT ME</a></li>
+            <li><a href="./projects.html">PROJECTS</a></li>
+        </ul>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
 
-   <!-- Individual Projects Section -->
-   <section class="projects-section">
-      <h2>Highlighted Projects</h2>
-      <div class="projects-grid">
-         <div class="project-card">
-            <img src="/images/bake.png" alt="Project 1">
-            <h3>Business Website</h3>
-            <p></p>
-            <a href="https://ann562.github.io/business-website/" class="btn-primary">View Project</a>
-         </div>
-         <div class="project-card">
-            <img src="/images/sage.png" alt="Project 2">
-            <h3>Survival Guide Website</h3>
-            <p></p>
-            <a href="https://ann562.github.io/Test/index.html" class="btn-primary">View Project</a>
-         </div>
-         <div class="project-card">
-            <img src="/images/git.png" alt="Project 3">
-            <h3>My GitHub</h3>
-            <p></p>
-            <a href="https://github.com/ann562" class="btn-primary">View Project</a>
-         </div>
-      </div>
-   </section>
+    <!-- Projects Overview Section -->
+    <section class="projects-overview">
+        <h1>Projects Portfolio</h1>
+        <p>Welcome to my projects page! Here, I showcase a selection of my work, highlighting my skills, creativity, and technical expertise.</p>
+    </section>
 
-   <!-- Footer -->
-   <footer class="projects-footer">
-      <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
-   </footer>
+    <!-- Individual Projects Section -->
+    <section class="projects-section">
+        <h2>Highlighted Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="./images/bake.png" alt="Project 1">
+                <h3>Business Website</h3>
+                <a href="https://ann562.github.io/business-website/" class="btn-primary">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="./images/sage.png" alt="Project 2">
+                <h3>Survival Guide Website</h3>
+                <a href="https://ann562.github.io/Test/index.html" class="btn-primary">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="./images/git.png" alt="Project 3">
+                <h3>My GitHub</h3>
+                <a href="https://github.com/ann562" class="btn-primary">View Project</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- JavaScript for Hamburger Menu -->
-  <script>
-   document.addEventListener("DOMContentLoaded", () => {
-       const hamburger = document.querySelector(".hamburger");
-       const navLinks = document.querySelector(".nav-links");
+    <!-- Footer -->
+    <footer class="projects-footer">
+        <p>&copy; 2024 Ann. All Rights Reserved.</p>
+    </footer>
 
-       hamburger.addEventListener("click", () => {
-           navLinks.classList.toggle("active");
-           hamburger.classList.toggle("active");
-       });
-   });
-</script>
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".nav-links");
+
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+                hamburger.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
 </html>
