@@ -1,0 +1,274 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+  padding-top: 60px; /* To account for fixed navbar */
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background-color:rgba(255, 99, 71, 0.95);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav .logo img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6347;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+/* Center the Projects Overview Section with Background Image and Overlay */
+.projects-overview {
+  position: relative; /* Position relative for the pseudo-element */
+  display: flex; /* Enable flexbox for centering */
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Full height of the viewport */
+  text-align: center; /* Center-align the text */
+  padding: 20px;
+  background-image: url('/images/projects.webp'); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Avoid repeating the image */
+  color: white; /* Make text white for better visibility over the image */
+  z-index: 1; /* Ensure content is above the overlay */
+}
+
+.projects-overview::before {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute; /* Position over the parent */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  linear-gradient(135deg, rgba(255, 144, 87, 0.8), rgba(255, 217, 119, 0.8)); /* Semi-transparent black overlay */
+  z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+.projects-overview h1 {
+  font-size: 2.5rem; /* Adjust font size */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow for readability */
+}
+
+.projects-overview p {
+  font-size: 1.2rem; /* Adjust font size */
+  max-width: 600px; /* Optional: Limit paragraph width for readability */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Add shadow for readability */
+}
+
+.projects-overview h1 {
+  font-size: 2.5rem; /* Adjust font size */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow for readability */
+}
+
+.projects-overview p {
+  font-size: 1.2rem; /* Adjust font size */
+  max-width: 600px; /* Optional: Limit paragraph width for readability */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Add shadow for readability */
+}
+
+
+/* Highlighted Projects Section */
+.projects-section {
+  padding: 50px 5%;
+  background-color: #f4f4f4;
+}
+
+.projects-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.project-card .btn-primary {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project-card .btn-primary:hover {
+  background-color: #e5533d;
+}
+
+/* Process Section */
+.process-section {
+  padding: 50px 5%;
+  text-align: center;
+  background-color: #fff;
+}
+
+.process-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.process-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.process-section li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+/* Additional Projects Section */
+.additional-projects {
+  padding: 50px 5%;
+  background-color: #f4f4f4;
+}
+
+.additional-projects h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.list-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.list-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.list-item .btn-secondary {
+  background-color: #555;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.list-item .btn-secondary:hover {
+  background-color: #444;
+}
+
+/* Footer */
+.projects-footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #111;
+  color: white;
+} 

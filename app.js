@@ -21,12 +21,12 @@ app.get('/', (req, res) => {
   res.render('index', { title: 'Home' });
 });
 
-app.get('/git', (req, res) => {
-  res.render('git', { title: 'Git' });
+app.get('/projects', (req, res) => {
+  res.render('projects', { title: 'projects' });
 });
 
-app.get('/linux', (req, res) => {
-  res.render('linux', { title: 'Linux' });
+app.get('/about', (req, res) => {
+  res.render('about', { title: 'about' });
 });
 
 app.get('/tips', (req, res) => {
